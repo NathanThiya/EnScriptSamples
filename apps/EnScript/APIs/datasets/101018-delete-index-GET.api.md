@@ -8,3 +8,9 @@ en.data.sets.deleteIndex datasetId indexName
 
 en.data.sets.deleteAllIndexes datasetId
 
+
+<% assign datasetId     = 'accounts' %>
+
+<% en.data.sets.deleteAllIndexes results datasetId %>
+
+<% return 'results' results  %>
