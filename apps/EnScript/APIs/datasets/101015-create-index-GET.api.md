@@ -23,3 +23,12 @@ collation   | Collation is an Object. Collation helps to index based on other lo
 
 <% en.data.sets.createIndex results datasetId name fields unique sparse %>
 <% return 'results' results  %>
+
+
+<% assign name                   = 'accounts-annualrevenue-idx' %> // name of the index
+<% assign fields.annualRevenue   = -1 %> // 1 - Ascending, -1 Decending
+
+<% en.data.sets.createIndex results2 datasetId name fields unique sparse %>
+<% return 'results2' results2  %>
+
+

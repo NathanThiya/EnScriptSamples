@@ -2,15 +2,19 @@
 
 en.data.sets.deleteIndex datasetId indexName
 
+<% assign datasetId     = 'accounts' %>
+<% assign indexName     = 'accounts-name-idx' %>
 
+<% en.data.sets.deleteIndex results datasetId indexName %>
+
+<% return 'results' results  %>
 
 # Delete all indexes on a dataset
-
 en.data.sets.deleteAllIndexes datasetId
 
 
-<% assign datasetId     = 'accounts' %>
+<% en.data.sets.deleteAllIndexes results2 datasetId %>
 
-<% en.data.sets.deleteAllIndexes results datasetId %>
+<% return 'results2' results2  %>
 
-<% return 'results' results  %>
+en.data.sets.deleteIndex datasetId indexName
