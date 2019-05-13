@@ -1,0 +1,13 @@
+<% assign today = en.time.now %>
+
+<% return 'todayAsDate' today %>
+
+<% return 'today-to_long' today | to_long %>
+<% return 'user-ip' en.req.ip %>
+
+<% return 'today-to_json' today | to_json %>
+
+<% rem return 'today-to_long' today | to_long %>
+
+
+
