@@ -1,19 +1,3 @@
-String url = context.getDataAsString(getParam(2));
-String bodyString = "";
-Document queryStringsDoc = context.getDataAsDocument(getParam(3));
-Document formFieldsDoc = context.getDataAsDocument(getParam(4));
-Document bodyJsonDoc = context.getDataAsDocument(getParam(5));
-if (bodyJsonDoc == null) {
-bodyString = context.getDataAsString(getParam(5));
-} else {
-bodyString = bodyJsonDoc.toJson();
-}
-Document headerDoc = context.getDataAsDocument(getParam(6));
-Document authDoc = context.getDataAsDocument(getParam(7));
-
-Object fileContent = context.getData(getParam(8));
-
-
 # HTTP Post method call
 
 ## en.http.post
