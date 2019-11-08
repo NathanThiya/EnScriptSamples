@@ -16,7 +16,7 @@ action          | valid values are: VIEW, DOWNLOAD, JSON
 
 
 Example #1:
-
+```
 <% assign datasetId = en.uri.5 %>
 <% assign rowId = en.uri.6 %>
 <% assign fieldId = en.uri.7 %>
@@ -31,3 +31,4 @@ Example #1:
 <% return results %>
 <% return 'getfile' true %>
 <% end %>
+```
